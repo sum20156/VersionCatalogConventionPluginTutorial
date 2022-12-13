@@ -7,5 +7,4 @@ android {
 }
 
 dependencies {
-    api(libs.bundles.networking)
 }
