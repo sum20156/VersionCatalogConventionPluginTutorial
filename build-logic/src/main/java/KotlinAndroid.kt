@@ -60,7 +60,14 @@ internal fun Project.configureKotlinAndroid(
             // Set JVM target to 1.8
             jvmTarget = JavaVersion.VERSION_1_8.toString()
         }
+
+        packagingOptions {
+            resources {
+                excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            }
+        }
     }
+
 
     val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
 

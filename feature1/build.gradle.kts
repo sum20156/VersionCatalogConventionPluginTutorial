@@ -1,5 +1,6 @@
 plugins {
     id("conventionplugintest.android.feature")
+    id("conventionplugintest.android.compose.library")
 }
 
 android {

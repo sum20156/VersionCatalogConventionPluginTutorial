@@ -22,7 +22,11 @@ gradlePlugin{
             id="conventionplugintest.android.library"
             implementationClass="AndroidLibraryConventionPlugin"
         }
-        register("composePlugin"){
+        register("androidFeature"){
+            id="conventionplugintest.android.feature"
+            implementationClass="AndroidFeatureConventionPlugin"
+        }
+        register("composePluginForApp"){
             id="conventionplugintest.android.compose"
             implementationClass="AndroidApplicationComposeConventionPlugin"
         }
@@ -30,9 +34,6 @@ gradlePlugin{
             id="conventionplugintest.android.compose.library"
             implementationClass="AndroidLibraryComposeConventionPlugin"
         }
-        register("androidFeature"){
-            id="conventionplugintest.android.feature"
-            implementationClass="AndroidFeatureConventionPlugin"
-        }
+
     }
 }
